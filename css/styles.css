@@ -50,7 +50,7 @@ button {
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  border: 1px solid transparent;
+  border: 0;
 
   font-weight: 700;
   font-size: 16px;
@@ -109,14 +109,22 @@ button {
 
 /* Футер */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-background-color);
 }
 
-.footer .logo {
+.footer .logo.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 }
 
 .address {
+  width: 231px;
+
   color: var(--primary-white-color);
 
   font-style: normal;
@@ -125,13 +133,18 @@ button {
 
 .contacts-link {
   color: rgba(255, 255, 255, 0.6);
-
-  line-height: 1.71;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+
+.location,
+.contacts-link.email {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 
 /* CSS страницы Студия */
@@ -154,6 +167,11 @@ button {
 }
 
 /* Секции */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -188,10 +206,6 @@ button {
   background-color: var(--secondary-background-color);
 }
 
-.section-title.team-title {
-  margin-top: 94px;
-}
-
 .team-photo {
   margin-bottom: 30px;
 }
@@ -220,8 +234,13 @@ button {
 /* CSS страницы Портфолио */
 /* Фильтры */
 .filters-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+
   background-color: var(--secondary-background-color);
   color: var(--title-text-color);
+  border: 0;
 
   font-weight: 500;
   font-size: 16px;
@@ -243,7 +262,15 @@ button {
   border: 1px solid #eeeeee;
 }
 
+.projects .picture {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .projects .title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -252,6 +279,9 @@ button {
 }
 
 .projects .text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;

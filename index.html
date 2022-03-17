@@ -17,51 +17,51 @@
 <body>
 
     <!-- Шапка -->
-    <header>
-        <nav class="container">
-            <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
-            
-            <ul class="site-nav">
-                <li><a href="./" class="link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
-            </ul>
-        </nav>
+    <div class="container">
+        <header class="header">
+            <nav class="main-nav">
+                <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
+        
+                <ul class="site-nav">
+                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
 
-        <div class="container">
             <ul class="contacts-header">
-                <li><a href="mailto:info@devstudio.com" class="link contacts-header">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link contacts-header">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@devstudio.com" class="link contacts-header">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link contacts-header">+38 096 111 11 11</a></li>
             </ul>
-        </div>
-    </header>
+        </header>
+    </div>
 
     <!-- Уникальный контент страницы -->
     <main>
             <!-- Герой -->
             <section class="hero">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
+                <button type="button" class="button-hero">Заказать услугу</button>
             </section>
             
             <!-- Качества -->
-            <section class="section">
+            <section class="section quality">
                 <div class="container">
-                    <h2 class="section-title">Качества</h2>
-                    <ul class="quality">
-                        <li>
+                    <h2 class="section-title hidden">Качества</h2>
+                    <ul class="quality-list">
+                        <li class="item">
                             <h3 class="quality-title">Внимание к деталям</h3>
                             <p class="quality-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
-                        <li>
+                        <li class="item">
                             <h3 class="quality-title">Пунктуальность</h3>
                             <p class="quality-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
-                        <li>
+                        <li class="item">
                             <h3 class="quality-title">Планирование</h3>
                             <p class="quality-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
-                        <li>
+                        <li class="item">
                             <h3 class="quality-title">Современные технологии</h3>
                             <p class="quality-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
@@ -73,10 +73,10 @@
             <section class="section">
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
-                    <ul>
-                        <li><img src="./images/box-1.png" alt="Ноутбук" width="370"></li>
-                        <li><img src="./images/box-2.png" alt="Смартфон" width="370"></li>
-                        <li><img src="./images/box-3.png" alt="Планшет" width="370"></li>
+                    <ul class="directions-list">
+                        <li class="photo"><img src="./images/box-1.png" alt="Ноутбук" width="370"></li>
+                        <li class="photo"><img src="./images/box-2.png" alt="Смартфон" width="370"></li>
+                        <li class="photo"><img src="./images/box-3.png" alt="Планшет" width="370"></li>
                     </ul>
                 </div>
             </section>
@@ -86,22 +86,22 @@
                 <div class="container">
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team-list">
-                        <li>
+                        <li class="item">
                             <img src="./images/img-1.jpg" alt="Портрет Product Designer" width="270" class="team-photo">
                             <h3 class="team-name">Игорь Демьяненко</h3>
                             <p class="team-position">Product Designer</p>
                         </li>
-                        <li>
+                        <li class="item">
                             <img src="./images/img-2.jpg" alt="Портрет Frontend Developer" width="270" class="team-photo">
                             <h3 class="team-name">Ольга Репина</h3>
                             <p class="team-position">Frontend Developer</p>
                         </li>
-                        <li>
+                        <li class="item">
                             <img src="./images/img-3.jpg" alt="Портрет Marketing" width="270" class="team-photo">
                             <h3 class="team-name">Николай Тарасов</h3>
                             <p class="team-position">Marketing</p>
                         </li>
-                        <li>
+                        <li class="item">
                             <img src="./images/img-4.jpg" alt="Портрет UI Designer" width="270" class="team-photo">
                             <h3 class="team-name">Михаил Ермаков</h3>
                             <p class="team-position">UI Designer</p>

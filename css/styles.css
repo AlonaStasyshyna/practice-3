@@ -43,6 +43,10 @@ button {
 
 /* Хедер */
 .header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container.header-container {
   display: flex;
   align-items: center;
 }
@@ -121,46 +125,6 @@ button {
 .contacts-header .link:hover,
 .contacts-header .link:focus {
   color: var(--accent-color);
-}
-
-/* Футер */
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  background-color: var(--footer-background-color);
-}
-
-.footer .logo.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-
-  color: var(--primary-white-color);
-}
-
-.address {
-  width: 231px;
-
-  color: var(--primary-white-color);
-
-  font-style: normal;
-  line-height: 1.71;
-}
-
-.contacts-link {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
-}
-
-.location,
-.contacts-link.email {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 9px;
 }
 
 /* CSS страницы Студия */
@@ -347,9 +311,10 @@ button {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
 
   background-color: var(--primary-white-color);
-  /* border: 1px solid #eeeeee; */
 }
 
 .projects .picture {
@@ -375,4 +340,44 @@ button {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
+}
+
+/* Футер */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-background-color);
+}
+
+.footer .logo.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
+.address {
+  width: 231px;
+
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.location,
+.contacts-link.email {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
